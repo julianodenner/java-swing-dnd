@@ -66,6 +66,7 @@ public class Jogador extends javax.swing.JPanel {
         gridBagConstraints.weightx = 1.0;
         add(lbTexto, gridBagConstraints);
 
+        lbPosicao.setFont(new java.awt.Font("Lucida Grande", 0, 10)); // NOI18N
         lbPosicao.setForeground(new java.awt.Color(255, 255, 51));
         lbPosicao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbPosicao.setText("Posição");
@@ -141,7 +142,7 @@ public class Jogador extends javax.swing.JPanel {
         posicoes[5][2] = "Avanço-lateral Direito";
 
         int ix = Math.round(6f * ((getX() - 34) * 1f / getParent().getWidth()));
-        int iy = Math.round(3f * ((getY() - 60) * 1f / getParent().getHeight()));
+        int iy = Math.round(3f * ((getY() - 40) * 1f / getParent().getHeight()));
 
         ix = (ix < 0) ? 0 : ix;
         iy = (iy < 0) ? 0 : iy;

@@ -44,7 +44,7 @@ public class Campo extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         getContentPane().add(campo, gridBagConstraints);
 
-        setBounds(0, 0, 636, 464);
+        setBounds(0, 0, 636, 405);
     }// </editor-fold>//GEN-END:initComponents
 
     /*
