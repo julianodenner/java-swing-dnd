@@ -56,7 +56,7 @@ public class Jogador extends javax.swing.JPanel {
         add(lbImagem, new java.awt.GridBagConstraints());
 
         lbTexto.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        lbTexto.setForeground(new java.awt.Color(255, 255, 51));
+        lbTexto.setForeground(new java.awt.Color(255, 204, 0));
         lbTexto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbTexto.setText("Jogador");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -67,7 +67,7 @@ public class Jogador extends javax.swing.JPanel {
         add(lbTexto, gridBagConstraints);
 
         lbPosicao.setFont(new java.awt.Font("Lucida Grande", 0, 10)); // NOI18N
-        lbPosicao.setForeground(new java.awt.Color(255, 255, 51));
+        lbPosicao.setForeground(new java.awt.Color(255, 204, 0));
         lbPosicao.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbPosicao.setText("Posição");
         lbPosicao.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -111,13 +111,13 @@ public class Jogador extends javax.swing.JPanel {
         xNovaPosicaoObjeto -= xNovaPosicaoObjeto % 10;
         yNovaPosicaoObjeto -= yNovaPosicaoObjeto % 10;
         setLocation(xNovaPosicaoObjeto, yNovaPosicaoObjeto);
-        setNomePosicao(evt);
+        setNomePosicao();
     }
 
     /*
     * Método que define o nome da posição
      */
-    private void setNomePosicao(MouseEvent evt) {
+    protected void setNomePosicao() {
         if (lbTexto.getText().equalsIgnoreCase("goleiro")) {
             return;
         }
